@@ -1,0 +1,340 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "cbAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "_cbAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_datasource",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_gasLimit",
+						"type": "uint256"
+					}
+				],
+				"name": "getPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_dsprice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_datasource",
+						"type": "string"
+					}
+				],
+				"name": "getPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_dsprice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_datasource",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_arg",
+						"type": "string"
+					}
+				],
+				"name": "query",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_id",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_datasource",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_arg1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_arg2",
+						"type": "string"
+					}
+				],
+				"name": "query2",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_id",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_datasource",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_arg1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_arg2",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_gasLimit",
+						"type": "uint256"
+					}
+				],
+				"name": "query2_withGasLimit",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_id",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_datasource",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_argN",
+						"type": "bytes"
+					}
+				],
+				"name": "queryN",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_id",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_datasource",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_argN",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_gasLimit",
+						"type": "uint256"
+					}
+				],
+				"name": "queryN_withGasLimit",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_id",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_datasource",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_arg",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_gasLimit",
+						"type": "uint256"
+					}
+				],
+				"name": "query_withGasLimit",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_id",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "randomDS_getSessionPubKeyHash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_sessionKeyHash",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_gasPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "setCustomGasPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes1",
+						"name": "_proofType",
+						"type": "bytes1"
+					}
+				],
+				"name": "setProofType",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidity/provableAPI.sol": "ProvableI"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidity/provableAPI.sol": {
+			"keccak256": "0x747a3c819dcbf0b178d9ba1ce882ed20c5b52028e7e04502c53e41cbb67117bd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1ef1776b9b6e6ec6b553e2a749fd44acb9dd6f5d61bd6085afad527bff6bbb96",
+				"dweb:/ipfs/QmNnaaaW9PY6WDmb5vCmMDTkRy8cz25ov2jdns7mdhWkAQ"
+			]
+		}
+	},
+	"version": 1
+}

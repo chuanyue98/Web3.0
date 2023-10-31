@@ -1,0 +1,145 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "addAuthorizedUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "authorizedUsers",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "author",
+								"type": "string"
+							}
+						],
+						"internalType": "struct AIGCStorage.NewsData",
+						"name": "_newsData",
+						"type": "tuple"
+					}
+				],
+				"name": "queryNews",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidity/ProvableQuery.sol": "ProvableQuery"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidity/AIGCStorage.sol": {
+			"keccak256": "0x73c38688c23d0889576c62594af0eef719273c9a1945f7050e2a12083e32fae2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0c8d79f9525731d802e40b7ece013015af640aa5dfc5885d60826c9728d1a2e8",
+				"dweb:/ipfs/QmVso6PBTnUEkeT86zRPJ4qcKLbgCHMuin9yUbk19riWr9"
+			]
+		},
+		"solidity/AccessControl.sol": {
+			"keccak256": "0xab466b1c102104c55ec1f1fff91103ae4f7b87df369bc6158c2d635a4785b2cf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://07c50436d918b0ecf1c6764e527547a485956f9db2a95bdc1f347e2a27abd24b",
+				"dweb:/ipfs/Qmcs9xnfgKExhgeYCtmenyN2cvhc91ZmzxuD6Y9sUGJjUE"
+			]
+		},
+		"solidity/ProvableQuery.sol": {
+			"keccak256": "0x8ae914c6baec193353bd3baaf891bda9915d4dd7d6cfff4b7f8a4e8342092eb6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://50b450a9e8109bdb8a8ac5c5f3c606bb7a449ef996e587ab458e38f9a561c4e1",
+				"dweb:/ipfs/Qmeqxmd4ZUpBshYH7jLw5Yo7u2HKFSB5AVD3PSSMq44God"
+			]
+		},
+		"solidity/provableAPI.sol": {
+			"keccak256": "0x747a3c819dcbf0b178d9ba1ce882ed20c5b52028e7e04502c53e41cbb67117bd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1ef1776b9b6e6ec6b553e2a749fd44acb9dd6f5d61bd6085afad527bff6bbb96",
+				"dweb:/ipfs/QmNnaaaW9PY6WDmb5vCmMDTkRy8cz25ov2jdns7mdhWkAQ"
+			]
+		}
+	},
+	"version": 1
+}
