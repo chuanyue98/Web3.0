@@ -4,6 +4,8 @@ pragma solidity ^0.8.0;
 
 import "./provableAPI.sol";
 import "./ProvableQuery.sol";
+import "./RewardManager.sol";
+import "./AIGCStorage.sol";
 
 contract NewsVerifier is usingProvable {
     string public verifiedNewsTitle;
@@ -20,31 +22,11 @@ contract NewsVerifier is usingProvable {
         provableQuery = ProvableQuery(_provableQuery);
     }
 
-    function uploadNews(string memory title, string memory content, string memory author) public {
-        // 用户上传新闻，包括标题、内容和作者
-        // 这里可以包括访问控制和用户身份验证逻辑
-        string memory newsData = string(abi.encodePacked(title, content, author));
-        bytes32 dataHash = keccak256(abi.encodePacked(newsData));
-        emit LogNewProvableQuery("Provable query sent, awaiting verification...");
-        
-        provableQuery.queryNews(title,content,author);
-    }
 
-
-    function verifyNews(string memory title, string memory content, string memory author) public returns (bool) {
-        // 替换为实际的 API 调用来获取不同媒体源的新闻信息
-
+    function verifyNews(AIGCStorage.NewsData memory news_data) view public returns (bool) {
 
         // 验证不同媒体源的信息是否匹配
-        bool isVerified = compareStrings(title, verifiedNewsTitle) && compareStrings(content, verifiedNewsContent) && compareStrings(author, verifiedNewsAuthor);
-
-        if (isVerified) {
-            // 如果验证通过，将相关数据存储到状态变量中
-            // 例如：verifiedNewsTitle = title; verifiedNewsContent = content; verifiedNewsAuthor = author;
-        } else {
-            // 如果验证失败，可以采取适当的措施，例如触发事件
-            emit NewsVerificationFailed("News verification failed for the provided data.");
-        }
+        bool isVerified = compareStrings(news_data.title, verifiedNewsTitle) && compareStrings(news_data.content, verifiedNewsContent) && compareStrings(news_data.author, verifiedNewsAuthor);
 
         return isVerified;
     }

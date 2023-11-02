@@ -17,7 +17,6 @@ contract ProvableQuery is usingProvable {
 
     constructor(address _storageContractAddress) {
         storageContract = AIGCStorage(_storageContractAddress);
-        provable_setProof(proofType_TLSNotary | proofStorage_IPFS);
     }
 
     // 发起 Provable 查询
